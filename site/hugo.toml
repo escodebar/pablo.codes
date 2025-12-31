@@ -1,6 +1,6 @@
 baseURL = 'https://pablo.codes/'
 languageCode = 'de-ch'
-title = 'Pablo Vergés'
+title = 'Pablo Codes'
 theme = 'pablo.codes'
 sectionPagesMenu = 'main'
 

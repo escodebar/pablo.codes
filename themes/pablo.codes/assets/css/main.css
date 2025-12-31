@@ -40,6 +40,57 @@ body {
 
 header {
 	background-color: var(--base0);
+	display: flex;
+}
+
+header::after {
+	content: "";
+	color: var(--base2);
+	background-color: var(--base0);
+	position: absolute;
+	right: 1em;
+}
+
+header h1 {
+	background-color: var(--base2);
+	color: var(--base03);
+	flex: 0 0 auto;
+	white-space: nowrap;
+}
+
+header h1::after {
+	content: "";
+	color: var(--base2);
+	background-color: var(--base0);
+}
+
+header nav {
+	flex: 1 1 auto;
+	min-width: 0;
+}
+
+header ol {
+	display: flex;
+	flex: 1;
+	list-style-position: inside;
+}
+
+header ol li {
+	flex: 0 1 auto;
+	min-width: 0;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+	color: var(--base2);
+	margin-right: 1em;
+}
+
+header ol li::marker {
+	content: " " counter(list-item);
+}
+
+header ol li .active {
+	color: var(--base3);
 }
 
 footer {
