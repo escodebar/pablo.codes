@@ -93,6 +93,30 @@ header ol li .active {
 	color: var(--base3);
 }
 
+main {
+	padding-top: 1em;
+}
+
+main :is(h1, h2, h3) {
+	color: var(--red);
+}
+
+main > * {
+	margin-bottom: 1em;
+}
+
+main h1::before {
+	content: "# ";
+}
+
+main h2::before {
+	content: "## ";
+}
+
+main h3::before {
+	content: "### ";
+}
+
 footer {
 	position: absolute;
 	bottom: 1em;
