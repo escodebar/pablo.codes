@@ -33,9 +33,17 @@
 	text-decoration: none;
 }
 
+html,
 body {
-	margin: 1em 1em 1em 0;
+	height: 100%;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	padding: 1em 1em 1em 0;
 	background-color: var(--base3);
+	box-sizing: border-box;
 }
 
 header {
@@ -92,6 +100,8 @@ header ol li .active {
 }
 
 main {
+	flex: 1 1 auto;
+	overflow-y: auto;
 	padding-top: 1em;
 }
 
