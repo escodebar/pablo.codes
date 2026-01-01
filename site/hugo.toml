@@ -10,18 +10,10 @@ sectionPagesMenu = 'main'
     pageRef = '/'
     weight = 10
   [[menus.main]]
-    name = 'CHANGELOG.md'
-    pageRef = '/CHANGELOG.md'
-    weight = 20
-  [[menus.main]]
     name = 'MAINTAINERS.md'
     pageRef = '/MAINTAINERS.md'
     weight = 20
   [[menus.main]]
     name = 'OPERATING_MODEL.md'
     pageRef = '/OPERATING_MODEL.md'
-    weight = 20
-  [[menus.main]]
-    name = 'PROFILE.md'
-    pageRef = '/PROFILE.md'
     weight = 20

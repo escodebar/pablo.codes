@@ -113,6 +113,10 @@ main > * {
   margin-bottom: 1em;
 }
 
+main a {
+  color: var(--blue);
+}
+
 main h1::before {
   content: "# ";
 }

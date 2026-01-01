@@ -1,7 +1,7 @@
-<span class="window"> main:0.0 </span
-><span class="location"> ~/repos/pablo.codes </span
-><span class="datetime">
-  ©️ {{ $t := now }}
+<span class="window"> main:0.0 </span>
+<span class="location"> ~/repos/pablo.codes </span>
+<span class="datetime">
+  {{ $t := now }}
   <time datetime="{{ $t }}">
     {{ $t | time.Format "Mon" }}  {{ $t | time.Format "2006-01-02" }}  {{ now
     | time.Format "15:04" }}
