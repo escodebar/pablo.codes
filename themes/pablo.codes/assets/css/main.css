@@ -1,179 +1,179 @@
 @font-face {
-	font-family: "pragmatapro";
-	src: url("/fonts/pragmatapro/PragmataProR_liga_0903.woff2")
-		format("woff2");
+  font-family: "pragmatapro";
+  src: url("/fonts/pragmatapro/PragmataProR_liga_0903.woff2") format("woff2");
 }
 
 :root {
-	--base03: #002b36;
-	--base02: #073642;
-	--base01: #586e75;
-	--base00: #657b83;
-	--base0: #839496;
-	--base1: #93a1a1;
-	--base2: #eee8d5;
-	--base3: #fdf6e3;
-	--yellow: #b58900;
-	--orange: #cb4b16;
-	--red: #dc322f;
-	--magenta: #d33682;
-	--violet: #6c71c4;
-	--blue: #268bd2;
-	--cyan: #2aa198;
-	--green: #859900;
+  --base03: #002b36;
+  --base02: #073642;
+  --base01: #586e75;
+  --base00: #657b83;
+  --base0: #839496;
+  --base1: #93a1a1;
+  --base2: #eee8d5;
+  --base3: #fdf6e3;
+  --yellow: #b58900;
+  --orange: #cb4b16;
+  --red: #dc322f;
+  --magenta: #d33682;
+  --violet: #6c71c4;
+  --blue: #268bd2;
+  --cyan: #2aa198;
+  --green: #859900;
 }
 
 * {
-	font-family: "pragmatapro";
-	font-size: 11pt;
-	line-height: 12pt;
-	margin: 0;
-	padding: 0;
-	color: inherit;
-	text-decoration: none;
+  font-family: "pragmatapro";
+  font-size: 11pt;
+  line-height: 12pt;
+  margin: 0;
+  padding: 0;
+  color: inherit;
+  text-decoration: none;
 }
 
 html,
 body {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	display: flex;
-	flex-direction: column;
-	padding: 1em 1em 1em 0;
-	background-color: var(--base3);
-	box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  padding: 1em 1em 1em 0;
+  background-color: var(--base3);
+  box-sizing: border-box;
 }
 
 header {
-	background-color: var(--base0);
-	display: flex;
+  background-color: var(--base0);
+  display: flex;
 }
 
 header::after {
-	content: "";
-	color: var(--base2);
-	background-color: var(--base0);
+  content: "";
+  color: var(--base2);
+  background-color: var(--base0);
 }
 
 header h1 {
-	background-color: var(--base2);
-	color: var(--base03);
-	flex: 0 0 auto;
-	white-space: nowrap;
+  background-color: var(--base2);
+  color: var(--base03);
+  flex: 0 0 auto;
+  white-space: nowrap;
 }
 
 header h1::after {
-	content: "";
-	color: var(--base2);
-	background-color: var(--base0);
+  content: "";
+  color: var(--base2);
+  background-color: var(--base0);
 }
 
 header nav {
-	flex: 1 1 auto;
-	min-width: 0;
+  flex: 1 1 auto;
+  min-width: 0;
 }
 
 header ol {
-	display: flex;
-	flex: 1;
-	list-style-position: inside;
+  display: flex;
+  flex: 1;
+  list-style-position: inside;
 }
 
 header ol li {
-	flex: 0 1 auto;
-	min-width: 0;
-	overflow: hidden;
-	white-space: nowrap;
-	text-overflow: ellipsis;
-	color: var(--base2);
-	margin-right: 1em;
+  flex: 0 1 auto;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  color: var(--base2);
+  margin-right: 1em;
 }
 
 header ol li::marker {
-	content: " " counter(list-item);
+  content: " " counter(list-item);
 }
 
 header ol li .active {
-	color: var(--base3);
+  color: var(--base3);
 }
 
 main {
-	flex: 1 1 auto;
-	overflow-y: auto;
-	padding-top: 1em;
+  flex: 1 1 auto;
+  overflow-y: auto;
+  padding-top: 1em;
 }
 
 main :is(h1, h2, h3) {
-	color: var(--red);
+  color: var(--red);
 }
 
 main > * {
-	color: var(--base01);
-	margin-bottom: 1em;
+  color: var(--base01);
+  margin-bottom: 1em;
 }
 
 main h1::before {
-	content: "# ";
+  content: "# ";
 }
 
 main h2::before {
-	content: "## ";
+  content: "## ";
 }
 
 main h3::before {
-	content: "### ";
+  content: "### ";
 }
 
 main li {
-	list-style-position: inside;
-	list-style-type: "- ";
+  list-style-position: inside;
+  list-style-type: "- ";
 }
 
 main li::marker {
-	color: var(--blue);
+  color: var(--blue);
 }
 
 main em::before,
 main em::after {
-	content: "_";
+  content: "_";
 }
 
 footer {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 footer .window {
-	color: var(--base3);
-	background-color: var(--green);
+  color: var(--base3);
+  background-color: var(--green);
 }
 
 footer .window::after {
-	background-color: var(--base2);
-	color: var(--green);
-	content: "";
+  background-color: var(--base2);
+  color: var(--green);
+  content: "";
 }
 
 footer .location {
-	background-color: var(--base2);
-	color: var(--base03);
+  background-color: var(--base2);
+  color: var(--base03);
 }
 
 footer .location::after {
-	background-color: var(--base3);
-	color: var(--base2);
-	content: "";
+  background-color: var(--base3);
+  color: var(--base2);
+  content: "";
 }
 
 footer .datetime {
-	background-color: var(--base03);
-	color: var(--base3);
-	margin-left: auto;
+  background-color: var(--base03);
+  color: var(--base3);
+  margin-left: auto;
 }
+
 footer .datetime::before {
-	background-color: var(--base3);
-	color: var(--base03);
-	content: "";
+  background-color: var(--base3);
+  color: var(--base03);
+  content: "";
 }
