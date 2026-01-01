@@ -47,8 +47,6 @@ header::after {
 	content: "";
 	color: var(--base2);
 	background-color: var(--base0);
-	position: absolute;
-	right: 1em;
 }
 
 header h1 {
@@ -102,6 +100,7 @@ main :is(h1, h2, h3) {
 }
 
 main > * {
+	color: var(--base01);
 	margin-bottom: 1em;
 }
 
@@ -117,7 +116,54 @@ main h3::before {
 	content: "### ";
 }
 
+main li {
+	list-style-position: inside;
+	list-style-type: "- ";
+}
+
+main li::marker {
+	color: var(--blue);
+}
+
+main em::before,
+main em::after {
+	content: "_";
+}
+
 footer {
-	position: absolute;
-	bottom: 1em;
+	display: flex;
+	align-items: center;
+}
+
+footer .window {
+	color: var(--base3);
+	background-color: var(--green);
+}
+
+footer .window::after {
+	background-color: var(--base2);
+	color: var(--green);
+	content: "";
+}
+
+footer .location {
+	background-color: var(--base2);
+	color: var(--base03);
+}
+
+footer .location::after {
+	background-color: var(--base3);
+	color: var(--base2);
+	content: "";
+}
+
+footer .datetime {
+	background-color: var(--base03);
+	color: var(--base3);
+	margin-left: auto;
+}
+footer .datetime::before {
+	background-color: var(--base3);
+	color: var(--base03);
+	content: "";
 }
