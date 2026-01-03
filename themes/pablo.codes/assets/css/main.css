@@ -146,27 +146,17 @@ main em::after {
 footer {
   display: flex;
   align-items: center;
-}
-
-footer .window {
-  color: var(--base3);
-  background-color: var(--green);
-}
-
-footer .window::after {
-  background-color: var(--base2);
-  color: var(--green);
-  content: "";
+  white-space: nowrap;
 }
 
 footer .location {
-  background-color: var(--base2);
-  color: var(--base03);
+  background-color: var(--green);
+  color: var(--base3);
 }
 
 footer .location::after {
   background-color: var(--base3);
-  color: var(--base2);
+  color: var(--green);
   content: "";
 }
 
