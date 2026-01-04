@@ -172,6 +172,7 @@ main dd {
 main th {
   color: var(--blue);
   text-align: left;
+  user-select: none;
 }
 main td {
   color: var(--red);
