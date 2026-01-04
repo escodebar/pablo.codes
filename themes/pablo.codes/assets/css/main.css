@@ -143,6 +143,34 @@ main em::after {
   content: "_";
 }
 
+main dt {
+  color: var(--violet);
+}
+main dt::after {
+  content: ": ";
+}
+main dd {
+  margin-left: 1em;
+}
+
+main th {
+  color: var(--blue);
+  text-align: left;
+}
+main td {
+  color: var(--red);
+}
+main td::before {
+  color: var(--base01);
+  content: "|";
+}
+main td:first-child {
+  color: var(--base03);
+}
+main td:first-child::before {
+  content: "";
+}
+
 footer {
   display: flex;
   align-items: center;

@@ -17,3 +17,7 @@ sectionPagesMenu = 'main'
     name = 'OPERATING_MODEL.md'
     pageRef = '/OPERATING_MODEL.md'
     weight = 20
+  [[menus.main]]
+    name = 'STACK.md'
+    pageRef = '/STACK.md'
+    weight = 20
