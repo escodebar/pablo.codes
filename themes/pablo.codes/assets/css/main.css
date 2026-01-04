@@ -98,6 +98,22 @@ header ol li .active {
   color: var(--base3);
 }
 
+@media (max-width: 460px) {
+  header {
+    flex-wrap: wrap;
+  }
+  header::after {
+    content: "";
+  }
+  header nav {
+    flex: 1 0 100%;
+  }
+
+  header ol li {
+    flex: 1 0 0;
+  }
+}
+
 main {
   flex: 1 1 auto;
   overflow-y: auto;
@@ -160,14 +176,14 @@ main th {
 main td {
   color: var(--red);
 }
-main td::before {
+main :is(th, td)::before {
   color: var(--base01);
   content: "|";
 }
 main td:first-child {
   color: var(--base03);
 }
-main td:first-child::before {
+main :is(th, td):first-child::before {
   content: "";
 }
 
