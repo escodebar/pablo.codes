@@ -48,8 +48,8 @@ jobs:
           hugo \
             --minify \
             --baseURL "${{ steps.pages.outputs.base_url }}/" \
-            --source $(realpath "./site") \
-            --themesDir $(realpath "./themes") \
+            --source $(realpath "./webpage/site") \
+            --themesDir $(realpath "./webpage/themes") \
             --destination $(realpath "./public")
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
